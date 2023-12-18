@@ -60,24 +60,6 @@ def is_Java(file):
 
 os.chdir(f"C:/Users/{user}/Downloads")
 
-#Build Folders
-# if not os.path.exists("Zip"):
-#     os.mkdir("Zip")
-# if not os.path.exists("Audio"):
-#     os.mkdir("Audio")
-# if not os.path.exists("Images"):
-#     os.mkdir("Images")
-# if not os.path.exists("Videos"):
-#     os.mkdir("Videos")
-# if not os.path.exists("Doc"):
-#     os.mkdir("Doc")
-# if not os.path.exists("Exe"):
-#     os.mkdir("Exe")
-# if not os.path.exists("Pdf"):
-#     os.mkdir("Pdf")
-# if not os.path.exists("Resume"):
-#     os.mkdir("Resume")
-
 for file in os.listdir():
 
 	mem += os.stat(file).st_size
