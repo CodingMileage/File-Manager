@@ -101,19 +101,3 @@ for file in os.listdir():
 		shutil.move(file, f"C:/Users/{user}/Downloads/Java")
 
 print(round(mem / (1024 * 1024)) , "MB left in the " , os.getcwd()[-1])
-
-
-
-print(os.getcwd())
-
-# print(os.getcwd())
-
-# # os.rename('Resume-Engineering.docx', 'RE.docx')
-
-# Path("I_Made_A_New_Folder").mkdir(exist_ok=True)
-
-# #MOVE
-# # shutil.move('RE.docx', 'C:/Users/B/Desktop')
-
-# #COPY
-# shutil.copy("C:/Users/B/Downloads/Resume-Engineering.docx", os.getcwd())
