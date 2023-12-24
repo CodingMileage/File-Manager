@@ -100,4 +100,4 @@ for file in os.listdir():
 		Path("Java").mkdir(exist_ok=True)
 		shutil.move(file, f"C:/Users/{user}/Downloads/Java")
 
-print(round(mem / (1024 * 1024)) , "MB left in the " , os.getcwd()[-1])
+print(round(mem / (1024 * 1024)) , "MB left in the" , "Download folder")
