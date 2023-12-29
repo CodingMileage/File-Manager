@@ -26,6 +26,8 @@ exe = (".exe", ".msi")
 
 code = (".java", ".class")
 
+apple = (".ipa" , ".qwqwqq")
+
 mem = 0
 
 user = getpass.getuser()
@@ -57,6 +59,9 @@ def is_exe(file):
 
 def is_Java(file):
 	return os.path.splitext(file)[1] in code
+
+def is_Apple(file):
+	return os.path.splitext(file)[1] in apple
 
 os.chdir(f"C:/Users/{user}/Downloads")
 
@@ -99,5 +104,9 @@ for file in os.listdir():
 	elif is_Java(file):
 		Path("Java").mkdir(exist_ok=True)
 		shutil.move(file, f"C:/Users/{user}/Downloads/Java")
+
+	elif is_Apple(file):
+		Path("Apple").mkdir(exist_ok=True)
+		shutil.move(file, f"C:/Users/{user}/Downloads/Apple")
 
 print(round(mem / (1024 * 1024)) , "MB left in the" , "Download folder")
